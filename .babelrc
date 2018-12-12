@@ -1,0 +1,28 @@
+{
+    "presets" : [
+      ["env", {
+        "targets": {
+          "node": "8.9.1"
+        }
+      }],"react"
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-object-assign"
+    ],
+    "env": {
+      "node": {
+        "plugins": [
+          [
+            "babel-plugin-transform-require-ignore",
+            {
+              "extensions": [".scss"]
+            }
+          ]
+        ]
+      }
+    }
+  }
+  
